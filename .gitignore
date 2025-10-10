@@ -1,0 +1,47 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.so
+
+# Virtual environments
+.venv/
+venv/
+.env
+.env.*
+
+# Jupyter / notebooks
+.ipynb_checkpoints/
+
+# Build / packaging
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# Logs / dumps
+*.log
+*.out
+*.err
+
+# IDE / editor
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Model / large artifacts (keep adapter weights, track large base model separately)
+# 如果不想提交本地基础模型，可取消下一行注释：
+# local_timesfm_model/
+
+# If using LFS you can track these patterns:
+# *.safetensors
+# *.pth
+
+# Temporary
+*.tmp
+*.bak
