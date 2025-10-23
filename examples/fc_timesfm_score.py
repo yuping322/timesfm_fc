@@ -32,11 +32,13 @@ _ADAPTER_CACHE = None
 CONFIG = {
     "use_adapter": True,
     "adapter_path": os.path.abspath(
-        os.path.join(os.path.dirname(__file__), "../finetuned_adapter.pth")
+        os.path.join(os.path.dirname(__file__), "../finetuned_adapter_all_99stocks.pth")
     ),
     # adapter_scope: "auto" obeys metadata, "match" forces metadata matching,
     # "global" applies adapter to all stocks regardless of metadata.
-    "adapter_scope": "auto",
+    "adapter_scope": "global",  # Use global mode for best overall performance
+    # Timing control: Only trade low-risk stocks
+    "min_confidence_threshold": 2.0,  # Only trade stocks with MAPE < 2%
 }
 
 
