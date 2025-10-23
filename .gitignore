@@ -34,14 +34,32 @@ dist/
 .DS_Store
 Thumbs.db
 
-# Model / large artifacts (keep adapter weights, track large base model separately)
-# 如果不想提交本地基础模型，可取消下一行注释：
-# local_timesfm_model/
+# Model / large artifacts
+# Keep the best adapter (finetuned_adapter_all_99stocks.pth), ignore others
+finetuned_adapter_all_10stocks.pth
+finetuned_adapter_all_97stocks.pth
+finetuned_adapter.pth
 
-# If using LFS you can track these patterns:
-# *.safetensors
-# *.pth
+# Output directories (evaluation results)
+outputs/
+outputs_all_ashares/
+outputs_all_ashares_comparison/
+outputs_top_gainers/
 
-# Temporary
+# Temporary / backup files
 *.tmp
 *.bak
+
+# Matplotlib cache
+.matplotlib/
+*.cache
+
+# pytest
+.pytest_cache/
+.coverage
+htmlcov/
+
+# MyPy
+.mypy_cache/
+.dmypy.json
+dmypy.json
