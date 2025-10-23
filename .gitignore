@@ -41,10 +41,11 @@ finetuned_adapter_all_97stocks.pth
 finetuned_adapter.pth
 
 # Output directories (evaluation results)
-outputs/
-outputs_all_ashares/
-outputs_all_ashares_comparison/
-outputs_top_gainers/
+# Uncomment to ignore outputs
+# outputs/
+# outputs_all_ashares/
+# outputs_all_ashares_comparison/
+# outputs_top_gainers/
 
 # Temporary / backup files
 *.tmp

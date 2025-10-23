@@ -1,0 +1,19 @@
+{
+  "total_stocks_evaluated": 500,
+  "stocks_with_data": 490,
+  "evaluation_period": "2025-07-21 to 2025-10-21",
+  "overall_metrics": {
+    "base_mae_mean": 0.5099354453765008,
+    "base_mae_median": 0.27088896930217743,
+    "base_mae_std": 0.7354841833515084,
+    "base_mape_mean": 1.9995088245187487,
+    "base_mape_median": 1.7960760593414307,
+    "base_mape_std": 0.9340950994829179,
+    "adapt_mae_mean": 0.46185390544409044,
+    "adapt_mae_median": 0.24923576414585114,
+    "adapt_mae_std": 0.652321673706278,
+    "adapt_mape_mean": 1.825076395577314,
+    "adapt_mape_median": 1.6616371273994446,
+    "adapt_mape_std": 0.823561191991308
+  }
+}
